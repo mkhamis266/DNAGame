@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/fav.webp" />
+  <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="images/fav.ico" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/dragula.min.css">
+  <link rel="stylesheet" href="css/style.css?v=1" />
+  <title>DNA Game</title>
+</head>
+
+<body>
+  <div id="startPage" class="page">
+
+    <div class="m-5">
+      <p class="pt-5 text-white w-50 mx-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem consequuntur! Itaque ad, voluptate ut quae commodi sit magnam atque fugiat saepe! Sunt beatae quasi nemo animi soluta? Esse sapiente debitis ab sed. Dolorem modi praesentium consequuntur pariatur consequatur a iste dolore fugit cumque doloribus veritatis nisi, maiores temporibus ut!
+      </p>
+    </div>
+    <div id="startGameButton" class="start-button d-flex align-items-center justify-content-center">start game</div>
+  </div>
+  <div id="gamePage" class="page">
+    <div id="container" class="container">
+      <h1 class="text-center mt-5 mb-2 text-secondary">Match correct DNA</h1>
+      <p class="text-center mb-3">Lorem ipsum dolor sit amet.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="DNAContainerLeft" class="col-3 p-2 row">
+
+          </div>
+          <div id="patientDNA" class="col-6 d-flex justify-content-center border border-4 border-black rounded-4 p-3">
+            <div style="width: 35.6%;">
+              <img src="images/main-dna-image_01.png" class="w-100 h-100" alt="">
+            </div>
+            <div id="target" style="width:27.4%" class="position-relative">
+              <div>
+                <img src="images/main-dna-image_02.png" class="w-100 h-100" alt="">
+              </div>
+            </div>
+            <div style="width:37%">
+              <img src="images/main-dna-image_03.png" class="w-100 h-100" alt="">
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="DNAContainerRight" class="col-3 p-3 d-flex flex-wrap">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="finalPage" class="page">
+    <div class="restart-button d-flex align-items-center justify-content-center">restart game</div>
+  </div>
+
+  <div class="modal fade" id="tryAgainModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center text-danger">Wrong Solution</div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Try Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/dragula.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

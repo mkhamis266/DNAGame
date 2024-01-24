@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#startPage {
+  background-color: #ff0000aa;
+  /* display: block; */
+  z-index: 1;
+}
+#gamePage {
+  background-color: #eee;
+  z-index: 10;
+  display: block;
+}
+#finalPage {
+  background-color: #0000ffaa;
+  z-index: 100;
+}
+
+.start-button {
+  position: absolute;
+  top: 70%;
+  left: 39%;
+  width: 18%;
+  height: 10%;
+  background-color: #fff;
+}
+.restart-button {
+  position: absolute;
+  top: 70%;
+  left: 39%;
+  width: 18%;
+  height: 10%;
+  background-color: #fff;
+}
+
+/* .draggable{
+  max-height: 100px;
+} */
+
+#target div
+{
+  position: absolute;
+  width: 100%;
+  top: 21%;
+}
