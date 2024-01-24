@@ -21,7 +21,7 @@ function startGame() {
     const element = document.createElement('div');
     element.src = DNAImagesSrc[i];
     element.innerHTML = `
-    <img src="${DNAImagesSrc[i]}" class="img-fluid">
+    <img src="${DNAImagesSrc[i]}" class="w-100">
     `;
 
     element.classList = 'col-6 draggable p-2';
